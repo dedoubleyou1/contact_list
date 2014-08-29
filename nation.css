@@ -1,0 +1,83 @@
+body {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+}
+a:link {
+	color: #000000;
+	text-decoration: none
+}
+a:visited {
+	color: #000000;
+	text-decoration: none
+}
+a#nav:link {
+	color: #0000cc;
+	text-decoration: underline
+}
+a#nav:visited {
+	color: #0000cc;
+	text-decoration: underline
+}
+a:active {
+	color: #cc0000;
+	text-decoration: underline
+}
+a:hover {
+	color: #cc0000;
+	text-decoration: underline
+}
+.smaller {
+	font-family: Verdana, sans-serif;
+	font-size: 10px;
+}
+.hed {
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: #900
+}
+.subhed {
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 8px;
+	margin-left: 8px
+}
+.desc {
+	font-family: Verdana, sans-serif;
+	color: #666;
+	font-style: italic;
+	font-size: 10px
+}
+td {
+/*	white-space: nowrap;
+*/}
+tr#header {
+	font-weight: bold;
+}
+#bordered {
+	border-top-style: solid;
+	border-top-color: #ccc;
+	border-top-width: 1px;
+}
+
+table {
+	width:100%;
+	table-layout:auto;
+}
+
+div.alphabets {
+	font-family: Verdana, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-top: 16px;
+	margin-bottom: 16px;
+	padding-bottom:16px;
+}
+
+
+ul li {
+	float:left;
+	list-style-type:none;
+	width:2em;
+}

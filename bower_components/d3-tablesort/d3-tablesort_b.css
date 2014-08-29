@@ -1,0 +1,47 @@
+.sort_indicator.sort_asc::after {
+    line-height: 0px;
+    font-size: 8px;
+    content: "\25B2" ;
+    padding-left: 5px;
+}
+
+.sort_indicator.sort_desc::after {
+    line-height: 0px;
+    font-size: 8px;
+    content: "\25BC";
+    padding-left: 5px;
+}
+
+th {
+    cursor: pointer;
+}
+
+.header-table {
+}
+
+.header-table th {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.body-table td {
+    border-style: dotted;
+    border-width: 0px;
+    border-color: #ddd;
+}
+
+.scroll-table {
+    overflow: auto;
+}
+
+.body-table tr:nth-child(odd) {
+    background: #f3f6f9;
+}
+
+.body-table tr:nth-child(even) {
+    background: #fff;
+}

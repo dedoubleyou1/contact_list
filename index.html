@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            table {
+                border-collapse: collapse;
+                border: 2px black solid;
+                font: 12px sans-serif;
+            }
+
+            td {
+                border: 1px black solid;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+        <link rel="stylesheet" type="text/css" href="bower_components/d3-tablesort/d3-tablesort_b.css">
+        <link rel="stylesheet" type="text/css" href="nation.css">
+        <script src="node_modules/d3/d3.min.js"></script>
+        <script src="bower_components/d3-tablesort/d3-tablesort_b.js"></script>
+
+        <div id='contact_list'></div>
+
+        <script type="text/javascript"charset="utf-8">
+
+
+
+            d3.text("data.csv", function(data) {
+                var parsedCSV = d3.csv.parseRows(data);
+                var headers = [
+                    { text: 'First', sort: TableSort.alphabetic },
+                    { text: 'Last', sort: TableSort.alphabetic },
+                    { text: 'Ext', sort: TableSort.numeric },
+                    { text: 'Email', sort: TableSort.alphabetic },
+                    { text: 'Title', sort: TableSort.alphabetic },
+                    { text: 'Phone', sort: TableSort.alphabetic }
+                ]
+
+                var sortableTable = TableSort(
+                    '#contact_list',
+                    headers,
+                    parsedCSV,
+                    { width: '800px', height: '700px' }
+                );
+            });
+        </script>
+    </body>
+</html>
